@@ -1,0 +1,35 @@
+/* CSS media queries */
+
+/* Medium screens */
+@media only screen and (min-width: 768px) {
+  header p {
+    width: 80%;
+  }
+
+  .card-header {
+    font-size: 1.8rem;
+  }
+
+  .cards {
+    gap: 3rem;
+  }
+  .card {
+    flex: 1 0 40%;
+  }
+
+  .card-info {
+    padding: 0;
+    margin: 2rem 0rem;
+  }
+}
+
+/* Larger screen and above */
+
+@media only screen and (min-width: 992px) {
+  .cards {
+    width: 90%;
+  }
+  .card {
+    flex: 1 0 30%;
+  }
+}
