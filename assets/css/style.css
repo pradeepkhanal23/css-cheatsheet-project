@@ -15,6 +15,7 @@
   --gradient-background: linear-gradient(to bottom, #e97eed41, #e97eed);
 }
 
+/* special pseudo selector to override the default text selection color in the browser */
 ::selection {
   background-color: var(--select-color);
   color: black;
@@ -112,7 +113,8 @@ header p {
 
 .card:hover,
 .card:hover .card-header {
-  box-shadow: 0px 0px 12px var(--primary-color);
+  /* glowing like effect using box shadow with the primary color */
+  box-shadow: 0px 0px 15px var(--primary-color);
 }
 
 .card-info {
@@ -123,12 +125,11 @@ header p {
 }
 
 .card-snippet {
-  /*we need to add this property to wrap the pre content incase the content is greater than the container itself*/
   flex: 2;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  white-space: pre-wrap;
+  white-space: pre-wrap; /*we need to add this property to wrap the pre content incase the content is greater than the container itself*/
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   background-image: var(--gradient-background);
   line-height: 1.5;
